@@ -1,0 +1,33 @@
+{
+    "name":  "website-automation-agent",
+    "version":  "1.0.0",
+    "description":  "TypeScript Playwright website automation agent for autonomous browser tasks.",
+    "type":  "module",
+    "scripts":  {
+                    "start":  "tsx src/index.ts agent",
+                    "task:assignment":  "tsx src/index.ts assignment",
+                    "search":  "tsx src/index.ts search",
+                    "youtube":  "tsx src/index.ts youtube",
+                    "build":  "tsc -p tsconfig.json",
+                    "check":  "npm run build",
+                    "postinstall":  "playwright install chromium",
+                    "agent":  "tsx src/index.ts agent"
+                },
+    "keywords":  [
+                     "playwright",
+                     "browser-automation",
+                     "typescript",
+                     "agent"
+                 ],
+    "author":  "",
+    "license":  "MIT",
+    "dependencies":  {
+                         "dotenv":  "^16.4.7",
+                         "playwright":  "^1.49.1"
+                     },
+    "devDependencies":  {
+                            "@types/node":  "^22.10.5",
+                            "tsx":  "^4.19.2",
+                            "typescript":  "^5.7.2"
+                        }
+}
